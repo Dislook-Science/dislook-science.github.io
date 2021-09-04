@@ -1,60 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-:root {
-  --bs-color-primary-main: #5865F2;
-  --bs-color-primary-dark: #404EED;
-
-  --bs-color-secondary-main: #36393F;
-  --bs-color-secondary-dark: #2F3136;
-  --bs-color-secondary-line: #202225;
-
-  --bs-color-success-main: #57F287;
-
-  --bs-color-shadows-main: rgba(0,0,0,0.1);
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-::-webkit-scrollbar-thumb {
-  background: var(--bs-color-secondary-main); 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--bs-color-secondary-dark); 
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  padding: 10px 10px 10px 10px;
-  background-image: url(https://theme.zdassets.com/theme_assets/678183/b7e9dce75f9edb23504e13b4699e208f204e5015.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
 .wrapper {
   max-width: 950px;
   margin: 80px auto;
 }
 
 .wrapper .content {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .wrapper .card {
@@ -64,14 +14,15 @@ body {
   font-size: 18px;
   box-shadow: 3px 3px 3px 3px var(--bs-color-shadows-main);
   overflow: hidden;
+  min-height: 380px;
 }
 
 .wrapper .card h5 {
   color: var(--bs-color-primary-dark);
 }
 
-.wrapper .card img {
-  cursor: no-drop;
+.wrapper .card .card-img-top {
+  height: 180px;
 }
 
 .wrapper .card .badge {
@@ -79,6 +30,14 @@ body {
   position: relative;
   margin-bottom: 10px;
   background-color: var(--bs-color-success-main);
+}
+
+.wrapper .card .card-footer {
+  border: none;
+  display: flex;
+  outline: none;
+  background: white;
+  align-self: center;
 }
 
 .wrapper .card .btn {
